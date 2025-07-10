@@ -6,6 +6,10 @@ const logger = require('morgan');
 
 const app = express();
 
+// filepath: /workspaces/node-mysql-webclass/app.js
+const flash = require('connect-flash');
+app.use(flash());
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
